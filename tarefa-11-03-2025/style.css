@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        text-wrap: nowrap;
+    }
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.page-wrapper {
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+    border: 1px solid #000;
+    margin-inline: auto;
+}
+
+.data-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .email-wrapper {
+        width: 100%;
+    }
+}
+
+.label-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}

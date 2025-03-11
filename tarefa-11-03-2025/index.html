@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <h1>Formulario de cadastro</h1>
+        </header>
+        
+        <main>
+            <form id="add-form" method="post" onsubmit="submitForm(this)">
+                <!-- Nome -->
+                <div class="label-wrapper">
+                    <label for="userName">Nome Completo:</label>
+                    <input type="text" name="userName" id="userName" placeholder="Digite seu nome completo">
+                </div>
+    
+                <!-- Email -->
+                <div class="data-wrapper">
+                    <div class="label-wrapper email-wrapper">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                    </div>
+
+        
+                    <!-- Data de Nascimento -->
+                    <div class="label-wrapper">
+                        <label for="birthday">Data de Nascimento:</label>
+                        <input type="date" name="birthday" id="birthday">
+                    </div>
+
+                </div>
+    
+                <div class="data-wrapper">
+                    <!-- Telefone Fixo -->
+                    <div class="label-wrapper">
+                        <label for="phoneFixed">Telefone Fixo:</label>
+                        <input type="tel" name="phoneFixed" id="phoneFixed" placeholder="Digite seu telefone fixo">
+                    </div>
+        
+                    <!-- Telefone Celular -->
+                    <div class="label-wrapper">
+                        <label for="phoneMobile">Telefone Celular:</label>
+                        <input type="tel" name="phoneMobile" id="phoneMobile" placeholder="Digite seu telefone celular">
+                    </div>
+        
+                    <!-- Rádio Box para aluno ou professor -->
+                    <div class="label-wrapper">
+                        <div class="radio-wrapper">
+                            <input type="radio" name="role" value="aluno" id="aluno"> Aluno
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input type="radio" name="role" value="professor" id="professor"> Professor
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="data-wrapper">
+                    <!-- Área -->
+                    <div id="area-field" class="label-wrapper">
+                        <label for="area">Área:</label>
+                        <input type="text" name="area" id="area" placeholder="Digite sua área">
+                    </div>
+                    
+                    <!-- Curso -->
+                    <div id="curso-field" class="label-wrapper">
+                        <label for="course">Curso:</label>
+                        <input type="text" name="course" id="course" placeholder="Digite seu curso">
+                    </div>
+    
+                    <!-- Matrícula -->
+                    <div id="matricula-field" class="label-wrapper">
+                        <label for="matricula">Matrícula:</label>
+                        <input type="text" name="matricula" id="matricula" placeholder="Digite sua matrícula">
+                    </div>
+                </div>
+    
+                <!-- Lattes -->
+                <div id="lattes-field" class="label-wrapper">
+                    <label for="lattes">Lattes:</label>
+                    <input type="url" name="lattes" id="lattes" placeholder="Informe o link do seu Lattes">
+                </div>
+    
+    
+                <!-- Botão de envio -->
+                <button type="submit">Enviar</button>
+                <button id="reset-form" type="button">Redefinir</button>
+            </form>
+        </main>
+    </div>
+    
+
+    <script src="classes/pessoa.js"></script>
+    <script src="classes/aluno.js"></script>
+    <script src="classes/professor.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
